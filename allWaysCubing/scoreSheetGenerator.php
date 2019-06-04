@@ -16,12 +16,15 @@
     <style>
         body {
             box-sizing: border-box;
+            margin: 10px;
         }
 
 
         .siteTitle {
             margin: 0px 0px 0px 0px;
             padding: 0px 0px 0px 0px;
+            color: green;
+            text-align: center;
         }
 
         #scoreSheet {
@@ -89,7 +92,8 @@
             font-weight: 400;
             border-bottom-style: solid;
             border-bottom-width: 1px;
-            height:36px;
+            height:38px;
+            margin-bottom: 5px;
         }
 
         #rowHeader .columns {
@@ -103,8 +107,8 @@
 
         #TournamentSetup {
             text-align: center;
-            background-color: lightgrey;
-            border: 1px solid grey;
+            background-color: yellow;
+            border: 2px solid red;
             width: 100%;
         }
 
@@ -122,7 +126,7 @@
         }
 
         .genSheet {
-            background-color: grey;
+            background-color: orange;
             clear: both;
         }
 
@@ -132,7 +136,8 @@
 </head>
 
 <body>
-    <h2 class="siteTitle">CWF Tournament Score Sheet Generator</h2>
+    <h4 class="siteTitle"><em>Cubing with Friends</em></h4>
+        <h3 class="siteTitle">Tournament Score Sheet Generator</h3>
     <h5 class="siteTitle">by <a href="https://www.AllWaysCubing.com" target="_blank">AllWays Cubing</a> &copy;2019</h5>
 
     <br><br>
