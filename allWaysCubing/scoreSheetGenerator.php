@@ -92,7 +92,7 @@
             font-weight: 400;
             border-bottom-style: solid;
             border-bottom-width: 1px;
-            height:38px;
+            height: 38px;
             margin-bottom: 5px;
         }
 
@@ -130,6 +130,11 @@
             clear: both;
         }
 
+        input[type="text"],
+        textarea {
+            background-color: rgba(0,255,255, .5);
+        }
+
     </style>
 
 
@@ -137,7 +142,7 @@
 
 <body>
     <h4 class="siteTitle"><em>Cubing with Friends</em></h4>
-        <h3 class="siteTitle">Tournament Score Sheet Generator</h3>
+    <h3 class="siteTitle">Tournament Score Sheet Generator</h3>
     <h5 class="siteTitle">by <a href="https://www.AllWaysCubing.com" target="_blank">AllWays Cubing</a> &copy;2019</h5>
 
     <br><br>
@@ -165,8 +170,8 @@
         </div>
         <div class="setupWells">
             Top Avg 3: <br>
-            Best solve: <br>
-             Top Avg 5: <br>
+            Best Solve: <br>
+            Top Avg 5: <br>
         </div>
 
         <div class="genSheet">
@@ -350,10 +355,10 @@
                     //$("#utimeAvg").html(totalAvgTimeMin + ":" + totalAvgTimeSec);
 
 
-                    
+
                     //reset background colors for min/max
                     for (j = 0; j < 9; j++) {
-                       $("#scoreSheet div:nth-child(" + i + ") div:nth-child(" + j + ")").css('background','white')
+                        $("#scoreSheet div:nth-child(" + i + ") div:nth-child(" + j + ")").css('background', 'white')
                     }
 
                     max = Math.max.apply(null, timeArray);
@@ -361,12 +366,12 @@
 
                     aMax = timeArray.indexOf(Math.max.apply(null, timeArray));
                     aMin = timeArray.indexOf(Math.min.apply(null, timeArray));
-                     // console.log("Min index:" + aMin + " and Max index: " + aMax);
-                    aMin =  aMin + 3;
-                    aMax =  aMax + 3;
-                    $("#scoreSheet div:nth-child(" + i + ") div:nth-child(" + aMin + ")").css('background','#FF0000')
-                    $("#scoreSheet div:nth-child(" + i + ") div:nth-child(" + aMax + ")").css('background','#FF0000')
-                  
+                    // console.log("Min index:" + aMin + " and Max index: " + aMax);
+                    aMin = aMin + 3;
+                    aMax = aMax + 3;
+                    $("#scoreSheet div:nth-child(" + i + ") div:nth-child(" + aMin + ")").css('background', '#FF0000')
+                    $("#scoreSheet div:nth-child(" + i + ") div:nth-child(" + aMax + ")").css('background', '#FF0000')
+
 
 
 
